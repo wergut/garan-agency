@@ -1,0 +1,50 @@
+.callback-section {
+  background-color: $--color-blue;
+  padding: 157px 0;
+
+  .callback-form {
+    padding: 30px;
+    background-color: $--color-white;
+
+    form {
+
+
+      br {
+        display: none;
+      }
+    }
+
+  }
+
+  .callback-content {
+    margin-bottom: 100px;
+
+    .h5 {
+      color: $--color-yellow;
+      margin-bottom: 0;
+    }
+
+    .h2 {
+      margin-bottom: 25px;
+    }
+
+    .callback-description {
+
+      p {
+        color: $--color-white;
+        max-width: 470px;
+      }
+    }
+  }
+
+  .callback-contacts {
+
+    .contact-link {
+      font-size: 17px;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

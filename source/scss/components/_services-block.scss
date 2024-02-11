@@ -1,0 +1,16 @@
+.services-section {
+  background-color: $--color-blue;
+  padding: 59px 0 43px;
+
+  .services-content {
+    padding-top: 42px;
+  }
+
+  .services-image {
+
+    img {
+      height: 763px;
+      object-fit: contain;
+    }
+  }
+}

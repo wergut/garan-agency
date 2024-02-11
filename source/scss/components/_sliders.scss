@@ -1,0 +1,26 @@
+.swiper-pagination-progressbar {
+  background-color: $--color-light-blue;
+  height: 12px!important;
+  .swiper-pagination-progressbar-fill {
+    background-color: $--color-yellow;
+  }
+}
+
+.swiper-button-next, .swiper-button-prev {
+  top: -55px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.swiper-button-next {
+  right: 0;
+  transform: scale(-1);
+}
+
+.swiper-button-prev {
+  right: 54px;
+  left: unset;
+}

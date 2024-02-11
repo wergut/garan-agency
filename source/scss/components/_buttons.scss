@@ -1,0 +1,42 @@
+button {
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  -webkit-transform: skew(-15deg);
+  -moz-transform: skew(-15deg);
+  -o-transform: skew(-15deg);
+  padding: 0 10px;
+}
+
+.btn-blue {
+  background-color: $--color-blue;
+  color: $--color-white;
+}
+
+.btn-yellow {
+  background-color: $--color-yellow;
+  color: $--color-default;
+}
+
+.btn-w-ico {
+
+  &:after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(../img/icons/send-ico.svg);
+    margin-left: 10px;
+  }
+}

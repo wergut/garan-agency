@@ -1,0 +1,153 @@
+* {
+  font-family: $--font-default;
+  line-height: initial;
+}
+
+h1, .h1 {
+  color: $--color-default;
+}
+h2 ,.h2 {
+  color: $--color-default;
+  font-weight: 700;
+  font-size: 44px;
+  margin-bottom: 50px;
+}
+
+.h2.white {
+  color: $--color-white;
+}
+
+h3, .h3 {
+  color: $--color-default;
+  font-weight: 600;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+h4, .h4 {
+  color: $--color-default;
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+h5, .h5 {
+  color: $--color-default;
+  font-weight: 600;
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.link-arrow {
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  color: $--color-blue;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  line-height: 0;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid $--color-blue;
+    border-right: 3px solid $--color-blue;
+    margin-left: 10px;
+    transform: rotate(45deg);
+  }
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 15px;
+  color: $--color-default;
+  width: fit-content;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 6px;
+  }
+}
+
+.link-mail-yellow {
+
+  &:before {
+    background-image: url(../img/icons/email-yellow.svg);
+  }
+}
+
+.link-phone-yellow {
+
+  &:before {
+    background-image: url(../img/icons/phone-yellow.svg);
+  }
+}
+
+.link-mail-white {
+  color: $--color-white;
+  &:before {
+    background-image: url(../img/icons/email-white.svg);
+  }
+}
+
+.link-phone-white {
+  color: $--color-white;
+  &:before {
+    background-image: url(../img/icons/phone-white.svg);
+  }
+}
+
+.link-address-white {
+  color: $--color-white;
+  &:before {
+    background-image: url(../img/icons/address-ico-white.svg);
+  }
+}
+
+
+
+.link-mail-blue {
+  &:before {
+    background-image: url(../img/icons/email-blue.svg);
+  }
+}
+
+.link-phone-blue {
+  &:before {
+    background-image: url(../img/icons/phone-blue.svg);
+  }
+}
+
+.link-address-blue {
+  &:before {
+    background-image: url(../img/icons/address-ico-blue.svg);
+  }
+}
+
+p {
+  color: $--color-default;
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 0.01em;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}

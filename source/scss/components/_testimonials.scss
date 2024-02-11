@@ -1,0 +1,23 @@
+.testimonials-section {
+  background-color: $--color-light-grey;
+  padding: 123px 0 117px;
+
+  .testimonials-description {
+    p {
+      max-width: 470px;
+    }
+  }
+
+  .h2 {
+    margin-bottom: 20px;
+  }
+
+  .testimonials-slider {
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    overflow-x: clip;
+    padding-top: 45px;
+    margin-top: 40px;
+  }
+}

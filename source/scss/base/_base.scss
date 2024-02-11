@@ -1,0 +1,97 @@
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+}
+
+main {
+  padding-top: 101px;
+}
+
+.title-block {
+  width: 100%;
+}
+
+
+.service-card {
+  padding: 20px 25px;
+  background-color: $--color-white;
+  margin-bottom: 30px;
+
+  .card-ico {
+    margin-bottom: 15px;
+
+    img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+  }
+
+  .card-description {
+    margin-bottom: 15px;
+
+    p {
+      color: $--color-grey;
+    }
+  }
+}
+
+.review-card {
+  padding: 20px 35px;
+  background-color: $--color-blue;
+  height: 259px;
+
+  .review-avatar {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -65px;
+    position: absolute;
+    right: 35px;
+    img {
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+    }
+  }
+  .review-author {
+    font-size: 15px;
+    color: $--color-white;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 35px;
+      height: 39px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url(../img/icons/quote.svg);
+      margin-bottom: 11px;
+    }
+  }
+  .h5 {
+    color: $--color-white;
+  }
+  .review-description {
+
+    p {
+      color: $--color-white;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -moz-box;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      line-clamp: 5;
+      box-orient: vertical;
+    }
+  }
+}
+
