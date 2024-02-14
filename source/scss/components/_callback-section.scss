@@ -1,10 +1,49 @@
 .callback-section {
   background-color: $--color-blue;
   padding: 157px 0;
+  position: relative;
+  overflow: hidden;
+
+  .col-lg-6:nth-of-type(2) {
+    padding-left: 180px;
+  }
+
+  .decorated-callback {
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      width: 300px;
+      height: 300px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      position: absolute;
+      right: -112px;
+      bottom: -145px;
+      background-image: url(../img/decor-image-callback2.png);
+    }
+  }
 
   .callback-form {
     padding: 30px;
     background-color: $--color-white;
+    position: relative;
+    margin-left: 152px;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 220px;
+      height: 220px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      position: absolute;
+      left: -220px;
+      top: -160px;
+      background-image: url(../img/decor-image-callback1.png);
+    }
 
     form {
 

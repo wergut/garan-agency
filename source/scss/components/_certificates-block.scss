@@ -106,4 +106,16 @@
 
 }
 
+.certificates-section-light {
+  background-color: $--color-light-grey;
 
+  .certificates-content {
+    .h2 {
+      color: $--color-blue;
+    }
+
+    .certificates-description p {
+      color: $--color-blue;
+    }
+  }
+}

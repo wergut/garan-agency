@@ -1,0 +1,47 @@
+.benefits-section {
+  background-color: $--color-light-grey;
+  border-bottom: 1px solid $--color-grey;
+
+  .title-block {
+    margin-bottom: 60px;
+
+    p {
+      max-width: 80%;
+    }
+  }
+
+  .benefits-content {
+    padding: 140px 0;
+  }
+
+  .h2 {
+    margin-bottom: 25px;
+  }
+
+  .image-wrapper {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+
+    img {
+      max-width: 773px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .benefits-list {
+
+    .benefit-item {
+      margin-bottom: 50px;
+
+      .h4 {
+        color: $--color-blue;
+        margin-bottom: 20px;
+      }
+      p {
+
+      }
+    }
+  }
+}

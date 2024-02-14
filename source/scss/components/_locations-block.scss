@@ -1,0 +1,76 @@
+.locations-section {
+  padding: 60px 0 88px;
+  background-color: $--color-blue;
+
+  .title-block {
+    display: flex;
+    align-items: center;
+
+    .link-yellow {
+      margin-bottom: 30px;
+      margin-left: 50px;
+    }
+
+    .h2 {
+      color: $--color-white;
+      margin-bottom: 59px;
+    }
+  }
+
+  .locations-list {
+    max-height: 439px;
+    overflow-y: auto;
+    padding-right: 10px;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      background-color: $--color-light-blue;
+    }
+
+    &::-webkit-scrollbar-track {
+
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $--color-yellow;
+    }
+
+    .location-item {
+      background-color: $--color-white;
+      padding: 30px;
+
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+
+      .location-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .h4 {
+          display: block;
+          color: $--color-blue;
+          margin-bottom: 20px;
+        }
+
+        .location-name {
+
+        }
+      }
+      .location-description {
+
+        p {
+
+        }
+      }
+    }
+  }
+
+  .map-wrapper {
+    height: 439px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+}

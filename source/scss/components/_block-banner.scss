@@ -1,0 +1,31 @@
+.page-banner {
+  height: 618px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .container {
+    height: inherit;
+  }
+
+  .banner-wrapper {
+    display: flex;
+    height: inherit;
+    padding: 70px 0;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-between;
+
+    .h1 {
+      color: $--color-white;
+      max-width: 70%;
+    }
+
+    .custom-form {
+      align-self: flex-start;
+      margin-top: 10px;
+    }
+
+  }
+
+}

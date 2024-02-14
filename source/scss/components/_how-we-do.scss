@@ -1,0 +1,22 @@
+.how-we-do-section {
+  padding: 133px 0 103px;
+  background-color: $--color-blue;
+
+  .h2 {
+    color: $--color-white;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .content-block {
+    margin-bottom: 30px;
+
+    .h4 {
+      color: $--color-yellow;
+      margin-bottom: 20px;
+    }
+    p {
+      letter-spacing: 0.005em;
+      color: $--color-white;
+    }
+  }
+}

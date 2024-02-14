@@ -5,7 +5,11 @@
 
 h1, .h1 {
   color: $--color-default;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 98px;
 }
+
 h2 ,.h2 {
   color: $--color-default;
   font-weight: 700;
@@ -40,6 +44,10 @@ a {
   text-decoration: none;
   transition: 0.3s;
   font-size: 15px;
+}
+
+.link-yellow {
+  color: $--color-yellow;
 }
 
 .link-arrow {
