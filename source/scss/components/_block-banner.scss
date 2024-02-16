@@ -1,7 +1,6 @@
 .page-banner {
   height: 618px;
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
 
   .container {
@@ -28,4 +27,21 @@
 
   }
 
+}
+
+
+@media (max-width: 1600px) {
+  .page-banner {
+    height: 400px;
+
+    .banner-wrapper {
+      padding: 40px 0;
+
+      .h1 {
+        font-size: 44px;
+        line-height: 54px;
+        max-width: 100%;
+      }
+    }
+  }
 }

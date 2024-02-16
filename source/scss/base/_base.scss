@@ -193,7 +193,7 @@ main {
     align-items: center;
 
     .btn {
-      max-width: 250px;
+      max-width: 237px;
       width: 100%;
     }
   }
@@ -263,4 +263,22 @@ main {
       align-items: flex-end;
     }
   }
+
+  .review-card {
+    padding: 24px;
+  }
+
+  .direction-card {
+
+    .direction-description {
+      margin-bottom: 40px;
+    }
+  }
+
+  .price-card-decorated {
+    &:before {
+      right: -25px;
+    }
+  }
+
 }

@@ -11,6 +11,23 @@ var swiper = new Swiper(".certificates-slider", {
     el: ".certificates-slider .swiper-pagination",
     type: "progressbar",
   },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    // when window width is >= 480px
+    1025: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    // when window width is >= 640px
+    1601: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    }
+  }
 });
 
 var swiper1 = new Swiper(".testimonials-slider", {

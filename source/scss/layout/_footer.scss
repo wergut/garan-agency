@@ -79,3 +79,17 @@
   }
 
 }
+
+@media (max-width: 1600px) {
+  .footer {
+    .footer-bottom {
+
+      .footer-menu-left {
+        max-width: 100%;
+      }
+      .footer-menu-right {
+        max-width: 70%;
+      }
+    }
+  }
+}

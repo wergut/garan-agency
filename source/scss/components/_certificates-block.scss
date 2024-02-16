@@ -131,3 +131,50 @@
     }
   }
 }
+
+
+@media (max-width: 1600px) {
+  .certificates-section {
+    padding: 130px 0;
+
+    .certificates-links {
+      max-width: 84%;
+    }
+
+    .certificates-content {
+      padding-top: 0;
+
+      .title-block {
+
+        &:after {
+          width: 148px;
+          height: 148px;
+        }
+      }
+
+      .certificates-description  {
+
+        p {
+
+          max-width: 90%;
+        }
+      }
+
+    }
+
+    .certificates-slider {
+      height: 450px;
+      padding-bottom: 32px;
+
+      .certificate-item {
+        width: 186px;
+        height: 186px;
+
+        img {
+          width: 138px;
+          height: 138px;
+        }
+      }
+    }
+  }
+}

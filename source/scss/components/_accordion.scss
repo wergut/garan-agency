@@ -22,6 +22,7 @@
       width: 100%;
       justify-content: space-between;
       align-items: center;
+      position: relative;
 
       &:after {
         content: "";
@@ -36,6 +37,8 @@
         background-position: center;
         background-size: 24px;
         background-image: url(../img/icons/arrow-down-white.svg);
+        position: absolute;
+        right: 25px;
       }
 
     }
@@ -43,7 +46,7 @@
     .accordion-item-content {
       overflow: hidden;
       width: 100%;
-      transition: height 0.5s ease-in-out;
+      transition: height 0.3s ease-in-out;
       height: 0;
 
       p {
@@ -58,7 +61,6 @@
   }
 
   .accordion-item.active {
-    transition: all 2s;
 
     .accordion-item-header {
 

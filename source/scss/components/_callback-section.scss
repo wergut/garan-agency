@@ -141,3 +141,31 @@
     }
   }
 }
+
+
+@media (max-width: 1600px) {
+  .callback-section {
+    .col-lg-6:nth-of-type(2) {
+      padding-left: 15px;
+    }
+
+    .callback-form:before {
+      width: 184px;
+      height: 184px;
+      left: -184px;
+      top: -140px;
+    }
+
+    .decorated-callback:after {
+      width: 246px;
+      height: 246px;
+      right: -30px;
+      bottom: -135px;
+    }
+
+    .link-address-white {
+      max-width: 55%;
+    }
+
+  }
+}
