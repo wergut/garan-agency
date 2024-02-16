@@ -46,6 +46,46 @@ a {
   font-size: 15px;
 }
 
+.location-name {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $--color-grey;
+  margin-top: 10px;
+}
+
+.link-black {
+  color: $--color-default;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+}
+
+.link-blue {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: $--color-blue;
+}
+
+.link-w-ico {
+  display: flex;
+  align-items: center;
+
+  &:after {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-image: url(../img/icons/send-ico-blue.svg);
+  }
+}
+
 .link-yellow {
   color: $--color-yellow;
 }
@@ -148,6 +188,13 @@ a {
   }
 }
 
+.lick-time-blue {
+
+  &:before {
+    background-image: url(../img/icons/clock-ico-blue.svg);
+  }
+}
+
 p {
   color: $--color-default;
   font-weight: 400;
@@ -158,4 +205,12 @@ p {
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+
+@media (max-width: 1600px) {
+
+  h2, .h2 {
+    margin-bottom: 40px;
+  }
 }

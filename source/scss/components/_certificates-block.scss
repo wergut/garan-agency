@@ -15,18 +15,22 @@
     padding-top: 85px;
 
     .title-block {
-      width: 70%;
-    }
+      max-width: 70%;
+      width: 100%;
+      position: relative;
 
-    .image-wrapper {
-      width: 30%;
-      display: flex;
-      justify-content: center;
-
-      img {
+      &:after {
+        content: "";
+        display: block;
         width: 184px;
         height: 184px;
-        object-fit: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        background-image: url(../img/icons/certificates-ico-white.svg);
+        right: -42%;
+        top: 0;
       }
     }
 
@@ -110,6 +114,14 @@
   background-color: $--color-light-grey;
 
   .certificates-content {
+
+    .title-block {
+
+      &:after {
+        background-image: url(../img/icons/certificate-image-blue.svg);
+      }
+    }
+
     .h2 {
       color: $--color-blue;
     }

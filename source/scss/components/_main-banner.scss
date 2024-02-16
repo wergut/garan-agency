@@ -1,6 +1,7 @@
 .main-banner {
   background-color: $--color-light-grey;
   padding: 42px 0 0;
+  position: relative;
 
   .banner-image {
 
@@ -43,16 +44,11 @@
           font-size: 38px;
           color: $--color-blue;
           margin-bottom: 5px;
-          span {
-
-          }
-
         }
         .stat-description {
           font-size: 14px;
           letter-spacing: 0.01em;
           color: $--color-default;
-          max-width: 90%;
         }
       }
     }
@@ -82,5 +78,29 @@
       }
     }
 
+  }
+}
+
+@media (max-width: 1600px) {
+  .main-banner {
+    height: 618px;
+
+    .banner-content {
+
+      .banner-title {
+        max-width: 85%;
+      }
+
+    }
+
+    .banner-image {
+
+      img {
+        position: absolute;
+        left: -70px;
+        bottom: -1px;
+        height: 581px;
+      }
+    }
   }
 }

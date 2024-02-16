@@ -1,0 +1,43 @@
+.main-locations-block {
+  margin: 30px 0 100px;
+
+  .h2 {
+    letter-spacing: -0.005em;
+  }
+
+  .connect-block {
+    background-color: $--color-blue;
+    padding: 45px 35px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .h3 {
+      color: $--color-white;
+      margin-bottom: 0;
+    }
+
+    .contact-link {
+      color: $--color-white;
+      font-size: 35px;
+      font-weight: 600;
+      line-height: 43px;
+
+      &:before {
+        width: 34px;
+        height: 34px;
+      }
+    }
+
+  }
+  .map-wrapper {
+    height: 592px;
+
+    img, iframe {
+      height: inherit;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

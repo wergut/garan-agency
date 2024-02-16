@@ -3,10 +3,21 @@
   border-bottom: 1px solid $--color-grey;
 
   .title-block {
-    margin-bottom: 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    p {
-      max-width: 80%;
+    .benefit-description {
+      margin-bottom: 50px;
+
+      p {
+        max-width: 80%;
+      }
+    }
+
+    .btn {
+      max-width: 427px;
     }
   }
 
@@ -18,29 +29,44 @@
     margin-bottom: 25px;
   }
 
-  .image-wrapper {
-    display: flex;
-    align-items: flex-end;
-    height: 100%;
-
-    img {
-      max-width: 773px;
-      width: 100%;
-      object-fit: cover;
-    }
-  }
-
   .benefits-list {
 
+    .col-lg-6 {
+
+      &:nth-of-type(3) {
+        .benefit-item {
+          padding: 32px 20px;
+        }
+      }
+    }
+
     .benefit-item {
-      margin-bottom: 50px;
+      margin-bottom: 30px;
+      padding: 43px 20px;
+      height: 180px;
+      background-color: $--color-white;
 
       .h4 {
         color: $--color-blue;
         margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+
+        &:before {
+          content: "";
+          display: block;
+          width: 30px;
+          height: 30px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          min-width: 30px;
+          background-image: url(../img/icons/gear-ico.svg);
+          margin-right: 20px;
+        }
       }
       p {
-
+        height: 63px;
       }
     }
   }

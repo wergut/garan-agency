@@ -45,17 +45,12 @@
 
       .location-title {
         display: flex;
-        align-items: center;
         justify-content: space-between;
 
         .h4 {
           display: block;
           color: $--color-blue;
           margin-bottom: 20px;
-        }
-
-        .location-name {
-
         }
       }
       .location-description {

@@ -19,10 +19,18 @@
       background-position: center;
       background-size: contain;
       position: absolute;
-      right: -112px;
-      bottom: -145px;
+      right: 0;
+      bottom: -155px;
       background-image: url(../img/decor-image-callback2.png);
     }
+  }
+
+  .contact-link:before {
+    margin-right: 15px;
+  }
+
+  .link-address-white {
+    max-width: 40%;
   }
 
   .callback-form {
@@ -83,6 +91,52 @@
 
       &:not(:last-child) {
         margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.callback-section-light {
+  background-color: $--color-white;
+
+  .callback-form {
+    background-color: $--color-light-grey;
+  }
+
+  .callback-content {
+
+    .h5 {
+      color: $--color-blue;
+    }
+    .callback-description  {
+
+      p {
+        color: $--color-default;
+      }
+    }
+  }
+  .callback-contacts {
+
+    .contact-link {
+      color: $--color-default;
+    }
+
+    .link-phone-white {
+
+      &:before {
+        background-image: url(../img/icons/phone-ico-black.svg);
+      }
+    }
+    .link-mail-white {
+
+      &:before {
+        background-image: url(../img/icons/mail-ico-black.svg);
+      }
+    }
+    .link-address-white {
+
+      &:before {
+        background-image: url(../img/icons/location-ico-black.svg);
       }
     }
   }

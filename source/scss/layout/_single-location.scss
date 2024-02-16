@@ -1,0 +1,54 @@
+.location-inner-section {
+  margin: 50px 0 120px;
+
+  .location-card {
+
+    .h3 {
+      color: $--color-blue;
+    }
+
+    .location-description {
+      margin-bottom: 30px;
+
+      p {
+        font-size: 26px;
+        line-height: 32px;
+      }
+    }
+
+    .location-name {
+      margin-top: -20px;
+      font-size: 17px;
+      line-height: 21px;
+    }
+
+    .location-contacts {
+      margin-bottom: 30px;
+    }
+
+    .contact-link {
+      font-size: 21px;
+      line-height: 26px;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      &:before {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  .location-map {
+
+    iframe {
+      height: 370px;
+      width: 100%;
+      object-fit: cover;
+      border: none;
+    }
+  }
+
+}

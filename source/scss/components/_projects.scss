@@ -180,3 +180,25 @@
 
   }
 }
+
+
+@media (max-width: 1600px) {
+  .projects-section {
+
+    .title-block {
+      width: 25%;
+      padding-bottom: 30px;
+
+      .link-arrow {
+        margin-bottom: 118px;
+      }
+    }
+    .project-slider {
+      width: 75%;
+
+      .project-case {
+        padding: 70px 30px 50px 22px;
+      }
+    }
+  }
+}

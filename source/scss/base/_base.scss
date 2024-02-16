@@ -20,6 +20,10 @@ main {
   width: 100%;
 }
 
+.form-wrapper-blue {
+  background-color: $--color-blue;
+  padding: 40px 30px 30px;
+}
 
 .service-card {
   padding: 20px 25px;
@@ -152,5 +156,111 @@ main {
     right: 33px;
     top: -34px;
     background-image: url(../img/icons/price-decor.svg);
+  }
+}
+
+
+.direction-card {
+  padding: 50px 40px;
+  background-color: $--color-light-grey;
+
+  .card-ico {
+    width: 100%;
+    margin-bottom: 30px;
+
+    img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+  }
+
+  .h4 {
+    margin-bottom: 20px;
+  }
+
+  .direction-description {
+    margin-bottom: 70px;
+
+    p {
+      color: $--color-grey;
+    }
+  }
+  .btns-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn {
+      max-width: 250px;
+      width: 100%;
+    }
+  }
+}
+
+.location-card {
+  padding: 30px;
+  background-color: $--color-light-grey;
+
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+
+  .location-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+    .h4 {
+      color: $--color-blue;
+      margin-bottom: 20px;
+    }
+  }
+  .location-description {
+    margin-bottom: 20px;
+
+    p {
+      letter-spacing: 0.005em;
+    }
+  }
+  .location-contacts {
+    margin-bottom: 20px;
+
+    .contact-link {
+
+      &:before {
+        width: 16px;
+        height: 16px;
+        margin-right: 15px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .location-btns {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn {
+      max-width: 265px;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+
+  .service-card {
+    .h4 {
+      height: 64px;
+      display: flex;
+      align-items: flex-end;
+    }
   }
 }
