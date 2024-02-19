@@ -34,8 +34,6 @@
   }
 
   .callback-form {
-    padding: 30px;
-    background-color: $--color-white;
     position: relative;
     margin-left: 152px;
 
@@ -51,14 +49,6 @@
       left: -220px;
       top: -160px;
       background-image: url(../img/decor-image-callback1.png);
-    }
-
-    form {
-
-
-      br {
-        display: none;
-      }
     }
 
   }

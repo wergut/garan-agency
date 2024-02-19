@@ -20,9 +20,192 @@ main {
   width: 100%;
 }
 
+form {
+  width: 100%;
+
+  .btn-w-ico {
+    background-image: url(../img/icons/send-ico.svg);
+    background-repeat: no-repeat;
+    background-position: 63% 55%;
+    background-size: 24px;
+    padding-right: 34px;
+  }
+
+  input {
+    background-repeat: no-repeat;
+    background-position: 15px 50%;
+    background-size: 24px;
+  }
+}
+
+
 .form-wrapper-blue {
   background-color: $--color-blue;
   padding: 40px 30px 30px;
+
+
+  .btn {
+    max-width: calc(100% - 20px);
+    width: 100%;
+  }
+
+  form.sent .wpcf7-response-output {
+    color: $--color-white;
+  }
+
+  .form-title {
+    font-family: $--font-second;
+    font-size: 26px;
+    font-weight: 700;
+    color: $--color-white;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .wpcf7-form-control-wrap {
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  br {
+    display: none;
+  }
+
+  input:not([type="submit"]) {
+    height: 50px;
+    max-width: 100%;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.005em;
+    padding: 0 20px 0 46px;
+    background-color: $--color-white;
+    color: $--color-grey;
+
+    &::placeholder {
+      font-size: 17px;
+      font-weight: 400;
+      letter-spacing: 0.005em;
+      color: $--color-grey;
+    }
+  }
+}
+
+.callback-form {
+  padding: 30px;
+  background-color: $--color-white;
+
+  .btn {
+    max-width: calc(100% - 20px);
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  input:not([type="submit"]) {
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.005em;
+    color: $--color-default;
+    background-color: $--color-light-grey-v2;
+    max-width: 100%;
+    width: 100%;
+    height: 50px;
+    padding: 0 20px 0 46px;
+
+    &::placeholder {
+      font-size: 17px;
+      font-weight: 400;
+      letter-spacing: 0.005em;
+      color: $--color-default;
+    }
+
+  }
+
+  input.form-name {
+    background-image: url(../img/icons/name-ico-black.svg);
+  }
+
+  input.form-email {
+    background-image: url(../img/icons/email-ico-black.svg);
+  }
+
+  input.form-phone {
+    background-image: url(../img/icons/form-phone-ico-black.svg);
+  }
+
+  input.form-site {
+    background-image: url(../img/icons/flag-ico-black.svg);
+  }
+
+  textarea {
+    background-image: url(../img/icons/pencil-ico-black.svg);
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+    padding: 15px 20px 15px 46px;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.005em;
+    color: $--color-default;
+    background-color: $--color-light-grey-v2;
+
+    &::placeholder {
+      font-size: 17px;
+      font-weight: 400;
+      letter-spacing: 0.005em;
+      color: $--color-default;
+    }
+  }
+
+  .wpcf7-form-control-wrap {
+    margin-bottom: 15px;
+    display: inline-block;
+    width: calc(50% - 8px);
+
+    &:has(textarea) {
+      width: 100%;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+
+    .btn-w-ico {
+      background-position: 73% 55%;
+    }
+
+    .wpcf7-spinner {
+      display: none;
+    }
+
+    > p {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    div:has(p) {
+      width: calc(50% - 8px);
+      display: flex;
+      align-items: center;
+    }
+
+    div > p {
+      font-size: 15px;
+      font-weight: 400;
+      color: $--color-grey-opacity;
+    }
+
+    p:has(.btn) {
+      width: calc(50% - 8px);
+    }
+
+    br {
+      display: none;
+    }
+  }
+
 }
 
 .service-card {
@@ -105,6 +288,9 @@ main {
   padding: 50px 40px;
   background-color: $--color-white;
   position: relative;
+  height: 306px;
+  display: flex;
+  flex-direction: column;
 
   .h3 {
     margin-bottom: 20px;
@@ -123,6 +309,7 @@ main {
     width: 100%;
     justify-content: space-between;
     margin-bottom: 20px;
+    margin-top: auto;
     align-items: flex-end;
 
     p {
@@ -279,6 +466,10 @@ main {
     &:before {
       right: -25px;
     }
+  }
+
+  .price-card {
+    height: 411px;
   }
 
 }

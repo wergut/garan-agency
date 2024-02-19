@@ -1,0 +1,28 @@
+input, textarea {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+input[type="submit"] {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+}
+
+input.form-name {
+  background-image: url(../img/icons/form-name-ico.svg);
+}
+
+input.form-email {
+  background-image: url(../img/icons/form-email-ico.svg);
+}
+
+input.form-phone {
+  background-image: url(../img/icons/form-phone-ico.svg);
+}
+
+input.form-site {
+  background-image: url(../img/icons/form-email-ico.svg);
+}

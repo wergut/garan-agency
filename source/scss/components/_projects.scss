@@ -134,7 +134,9 @@
               display: flex;
               align-items: center;
               line-height: 0;
+            }
 
+            .stat-percent.up {
               &:before {
                 content: "";
                 display: block;
@@ -144,6 +146,21 @@
                 background-position: center;
                 background-size: contain;
                 margin-right: 4px;
+                background-image: url(../img/icons/arrow-top-blue.svg);
+              }
+            }
+
+            .stat-percent.down {
+              &:before {
+                content: "";
+                display: block;
+                width: 35px;
+                height: 35px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                margin-right: 4px;
+                transform: rotate(180deg);
                 background-image: url(../img/icons/arrow-top-blue.svg);
               }
             }
